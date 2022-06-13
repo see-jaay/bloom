@@ -1,0 +1,19 @@
+{
+  "name": "bloom",
+  "version": "1.0.0",
+  "description": "A lower level visual editor for web development.",
+  "main": "core.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/see-jaay/bloom.git"
+  },
+  "author": "@see_jaay : c. d. foster",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/see-jaay/bloom/issues"
+  },
+  "homepage": "https://github.com/see-jaay/bloom#readme"
+}
