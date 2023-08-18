@@ -1,0 +1,16 @@
+{
+  "title": "",
+  "subjects": {
+    "0": {},
+    "1": {}
+  },
+  "layers": [],
+  "modifiers": {
+    "mirror": [
+      [0, "x,y  or  vertical/horizontal"]
+    ],
+    "clipPath": [
+      [1, "path"]
+    ]
+  }
+}
