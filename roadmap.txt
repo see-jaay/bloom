@@ -1,0 +1,315 @@
+What is Bloom ?
+  - a web based visual editor for :
+    - svg/webgl art composition and animation.
+    - web/native application design and development.
+
+What problem does Bloom solve ?
+  - provides an all in on visual editor for user-interfaces
+  - simplifies the creation of complex visuals.    *****
+  - simplifies the creation of interactive interfaces.    *****
+  - assists in the development of web/native applicaitons with un-conventional design & layouts.
+
+How is Bloom unique ?
+  - through the use of modifiers and plugins, visual properties/effects can easily be built.
+  - users can create and share custom modifiers and plugins.
+  - an all in one editor for web/native applications and svg/webgl art.
+
+
+Backend operations :
+  - file management
+    - save/load files and packages to the cloud
+      - file types : json, svg, jpg, svg-tween, webgl program, javascript, css, html, .blm ( bloom project file ), android package, ios package
+    - databases :
+      - users/creators: user info, package id, plugin id, modifier id
+      - plugins: function, parameters, owner, date
+      - modifiers: function, parameters, owner, date
+
+
+Program Features : 
+
+  - svg composition ***
+    - svg specific toolsets
+    - rendering to svg format
+    - animate properties through tweening and interpolation
+    - modifiers for compound effects
+
+  - webgl render composition
+    - compose webgl images/visual effects
+    - shaders as modifiers 
+    - converting subj. properties to keyframes 
+    - keyframe property easing
+    - timeline 
+
+  - plugin support
+    - react, react native
+
+  - community marketplaces
+    - modifiers
+    - plugins
+
+  - native app development
+    - emulator support
+    - application rendering and compiling
+    - support for react, vue, etc.
+
+  - web app development
+    - web rendering and compiling
+    - support for react, vue, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################   brainstorming   ####################
+
+* svg and webgl canvases
+* rendering and compiling tools
+pan, scroll, and zoom functionality
+drag & drop, popout, and anchored panels
+snap to grid
+adjustable grid
+align to peer subjects
+layers
+composite components / groups
+subject & project serialization
+generalized framework for serialization
+subject modifiers
+modifier chains
+bloom plugins
+plugin frameworks
+
+data elements :
+points, anchors, 
+
+
+tools:
+
+select anchors / points, subjects / groups (additive & subtractive)
+select laso (additive & subtractive)
+pencil / smooth pencil, pen, auto-pen, brush / smooth brush.
+shapes (circle, square, polygons)
+paint bucket 
+color picker
+text
+eraser
+etc.
+
+
+
+plugin support :
+
+
+##########################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################   manifest structures  ##################
+- the maniest is compressed/encrypted for cloud storage.
+- 
+
+
+
+obj::user prefrences [units & measurement, themes, environment layouts, memory & caching ] :
+- user prefrences are files saved locally dictating the overall user experience.
+  units & measurement [unit size] 
+  themes
+  environment layouts
+  memory & caching
+
+
+
+obj::project.blm [subject list] :
+- project manifests are saved as .blm
+- catalogue subjects, project prefrences
+
+
+
+fn::modifier (params) :
+- input subject properties, 
+
+obj::subject [uid, type, transform, draw function, composite/child data] :
+- mutable properties are adjusted and reflected in UI panel components.
+- maintain consistent structure for all subject types
+
+  string::uid
+  string::type (svg composition, webgl composition, )
+  obj::transform [position, rotation] :
+    obj::position [x, y]
+    float::rotation [radians]
+  obj::drawData [function, points, functionPath] :
+  obj::composites [children, child count] : 
+  obj::modifier [properties, parameters] :
+    obj::properties
+
+
+
+workspace anchors will modify variable parameter data
+reflect subject data in ui panels and fields
+
+#########################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############  framework and functions  ################
+- functions for file management, tool operations
+
+obj::file management [edit, view, etc.] :
+  menu::file [new project, new file/composite, save, save as ] :
+    newproject :
+    new file :
+  edit [image cropping, copy paste, ]:
+  view []:
+
+
+obj::modifiers [property, parameters] :
+  - modifiers can be attatched to 
+
+
+
+#########################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############  UI/UX Design  ################
+
+- functions for user experience, general properties of UI design 
+
+
+environment [file management, windows, panels] :
+  windows [panels, workspaces] :
+    data panels [data fields, data widgits] :
+      data fields:
+      data widgits:
+    workspace [canvas, panning/scrolling/zooming, panels]:
+      canvas [dimensions] :
+      panels [toggled, property spotlights] :
+
+
+
+########################################################
